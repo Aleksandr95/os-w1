@@ -1,4 +1,4 @@
-TARGET  := test
+TARGET  := fork
 SRCS    := main.c
 OBJS    := ${SRCS:.c=.o} 
 DEPS    := ${SRCS:.c=.dep} 
