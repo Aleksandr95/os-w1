@@ -19,7 +19,6 @@ int main (int argc, char *argv[])
         printf("Child process with pid=%d\n", pid);
         return 0;
     }
-
-    printf("Main process with pid=%d\n", pid);
+    printf("Main process with pid=%d\n",getpid());
 }
 
