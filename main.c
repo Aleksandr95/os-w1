@@ -15,11 +15,11 @@ int main (int argc, char *argv[])
 
     if (pid == 0)
     {
-        pid = getpid();
         printf("Child process with pid=%d\n", pid);
+        execlp("mkdir","mkdir","test",NULL);
         return 0;
     }
-
+    pid = getpid();
     printf("Main process with pid=%d\n", pid);
 }
 
